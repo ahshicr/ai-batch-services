@@ -1,0 +1,40 @@
+name: E-commerce product image request
+description: Request batch AI product image generation.
+title: "[Product Images]: "
+labels: ["lead", "ecommerce-image"]
+body:
+  - type: input
+    id: company
+    attributes:
+      label: Company or shop
+      placeholder: Example Store
+    validations:
+      required: true
+  - type: input
+    id: sku_count
+    attributes:
+      label: SKU count
+      placeholder: "100"
+    validations:
+      required: true
+  - type: textarea
+    id: style
+    attributes:
+      label: Target style
+      description: Describe the desired background, model, scene, and platform requirements.
+    validations:
+      required: true
+  - type: textarea
+    id: sample_assets
+    attributes:
+      label: Sample assets
+      description: Share links to 3 sample product images or explain how you will provide them.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Dimensions, file format, forbidden elements, QA rules, and deadline.
+    validations:
+      required: true
