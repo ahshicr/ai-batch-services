@@ -1,0 +1,40 @@
+name: Offline data processing request
+description: Request batch extraction, classification, summaries, or cleanup.
+title: "[Data Processing]: "
+labels: ["lead", "offline-text"]
+body:
+  - type: input
+    id: company
+    attributes:
+      label: Company or project
+      placeholder: Example Company
+    validations:
+      required: true
+  - type: input
+    id: row_count
+    attributes:
+      label: Row or document count
+      placeholder: "100000"
+    validations:
+      required: true
+  - type: textarea
+    id: input_format
+    attributes:
+      label: Input format
+      description: CSV, Excel, JSONL, PDF, screenshots, or other.
+    validations:
+      required: true
+  - type: textarea
+    id: output_schema
+    attributes:
+      label: Desired output schema
+      description: List target fields and give expected examples.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Accuracy target, sample audit percentage, file format, and deadline.
+    validations:
+      required: true
