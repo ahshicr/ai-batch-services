@@ -1,0 +1,9 @@
+.env
+*.zip
+*.7z
+input/
+results/
+logs/
+customer-data/
+__pycache__/
+*.pyc
