@@ -1,0 +1,40 @@
+name: RAG knowledge base request
+description: Request document cleaning, chunking, embeddings, and QA evaluation.
+title: "[RAG]: "
+labels: ["lead", "rag"]
+body:
+  - type: input
+    id: company
+    attributes:
+      label: Company or project
+      placeholder: Example Company
+    validations:
+      required: true
+  - type: input
+    id: document_count
+    attributes:
+      label: Document count and formats
+      placeholder: "300 PDFs and Word files"
+    validations:
+      required: true
+  - type: textarea
+    id: sample_docs
+    attributes:
+      label: Sample documents
+      description: Share a small sample or explain what can be provided.
+    validations:
+      required: true
+  - type: textarea
+    id: questions
+    attributes:
+      label: Test questions
+      description: Provide common questions or expected answer examples.
+    validations:
+      required: true
+  - type: textarea
+    id: delivery
+    attributes:
+      label: Delivery format
+      description: Vector store, local demo, scripts, QA report, deployment notes.
+    validations:
+      required: true
